@@ -1,0 +1,13 @@
+#1 objetivo- criar um api de disponibilidade a consulta, criaçao, ediçao, e exclusao de livros.
+#2 url base- localhost
+#3- endpoints- 
+# localhost/livros(GET)
+# localhost/livros/id (GET)
+# localhost/livro/id (PUT)
+# localhost/livro/id (DELETE)
+#4- quais recursos - livros
+
+# consultar (todos)
+# consultar (id)
+# editar
+# excluir
