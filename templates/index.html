@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documento</title>
+    <link rel="stylesheet" href="../static/css/app.css" />
   </head>
   <body>
     <header>
@@ -13,15 +14,14 @@
       <div>
         <table>
           <thead>
-            <tr>
-              <th>autor</th>
-              <th>titulo</th>
-            </tr>
+            <th>id</th>
+            <th>autor</th>
+            <th>titulo</th>
           </thead>
           <tbody>
             {% for livro in books %}
             <tr>
-			  <td>{{ livro.id}}</td>
+              <td>{{ livro.id}}</td>
               <td>{{ livro.titulo }}</td>
               <td>{{ livro.autor }}</td>
             </tr>
