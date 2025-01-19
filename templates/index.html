@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+  </head>
+  <body>
+    <header>
+      <h1>livros</h1>
+    </header>
+    <main>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>autor</th>
+              <th>titulo</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for livro in books %}
+            <tr>
+			  <td>{{ livro.id}}</td>
+              <td>{{ livro.titulo }}</td>
+              <td>{{ livro.autor }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <p>@copywriter</p>
+    </footer>
+  </body>
+</html>
