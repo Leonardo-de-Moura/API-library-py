@@ -1,12 +1,11 @@
-from flask import Blueprint,request,jsonify, render_template
+from flask import Blueprint,request,jsonify
 from database.database import livros
 
 livros_routes= Blueprint('livros', __name__)
 
 @livros_routes.route('/livros', methods=['GET'])
 def obter_livros():
-	books = livros
-	return render_template("index.html", books=books)
+	return livros
 
 @livros_routes.route('/livros/<int:id>', methods= ['GET'])
 def obter_livros_id(id):
