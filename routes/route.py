@@ -5,7 +5,7 @@ livros_routes= Blueprint('livros', __name__)
 
 @livros_routes.route('/livros', methods=['GET'])
 def obter_livros():
-	return livros
+	return jsonify(livros)
 
 @livros_routes.route('/livros/<int:id>', methods= ['GET'])
 def obter_livros_id(id):
